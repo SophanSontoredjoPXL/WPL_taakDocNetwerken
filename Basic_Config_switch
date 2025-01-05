@@ -1,1 +1,29 @@
 Basic Config Switch
+
+PXL
+enable
+config terminal
+interface vlan 1
+ip address 192.168.0.253 255.255.255.0
+no shutdown
+exit
+ip default-gateway 192.168.0.1
+
+LOGIN
+line console 1
+password pxl
+login
+
+Hasselt
+enable
+config terminal
+interface vlan 1
+ip address 192.168.1.253 255.255.255.0
+no shutdown
+exit
+ip default-gateway 192.168.1.1
+
+LOGIN
+line console 1
+password hasselt
+login
